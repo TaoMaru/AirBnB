@@ -39,9 +39,9 @@ Public Class frmAirBnB
             decTotalCostOfStay = intNumberOfNights * cdecPricePerNight
             'Convert total cost to String for display
             lblTotalCost.Text = decTotalCostOfStay.ToString("C2")
-        Catch badFormat As FormatException
-            txtNumberOfNights.Clear()
-            txtNumberOfNights.Focus()
+        Catch badFormat As FormatException 'bad input received
+            txtNumberOfNights.Clear() 'clear text input
+            txtNumberOfNights.Focus() 'reset focus to get new input
         End Try
 
     End Sub
