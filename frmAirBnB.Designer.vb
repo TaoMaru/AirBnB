@@ -40,7 +40,7 @@ Partial Class frmAirBnB
         '
         Me.lblHeading.BackColor = System.Drawing.Color.Transparent
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(393, 29)
+        Me.lblHeading.Location = New System.Drawing.Point(393, 21)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(411, 49)
         Me.lblHeading.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class frmAirBnB
         'lblPrice
         '
         Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrice.Location = New System.Drawing.Point(447, 98)
+        Me.lblPrice.Location = New System.Drawing.Point(447, 70)
         Me.lblPrice.Name = "lblPrice"
         Me.lblPrice.Size = New System.Drawing.Size(312, 37)
         Me.lblPrice.TabIndex = 1
@@ -60,16 +60,17 @@ Partial Class frmAirBnB
         'lblNumNights
         '
         Me.lblNumNights.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumNights.Location = New System.Drawing.Point(427, 185)
+        Me.lblNumNights.Location = New System.Drawing.Point(427, 154)
         Me.lblNumNights.Name = "lblNumNights"
         Me.lblNumNights.Size = New System.Drawing.Size(203, 33)
         Me.lblNumNights.TabIndex = 2
         Me.lblNumNights.Text = "Number of Nights:"
+        Me.lblNumNights.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtNumberOfNights
         '
         Me.txtNumberOfNights.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNumberOfNights.Location = New System.Drawing.Point(652, 185)
+        Me.txtNumberOfNights.Location = New System.Drawing.Point(675, 154)
         Me.txtNumberOfNights.Multiline = True
         Me.txtNumberOfNights.Name = "txtNumberOfNights"
         Me.txtNumberOfNights.Size = New System.Drawing.Size(48, 33)
@@ -80,9 +81,9 @@ Partial Class frmAirBnB
         Me.btnCost.BackColor = System.Drawing.Color.LightGoldenrodYellow
         Me.btnCost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCost.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCost.Location = New System.Drawing.Point(415, 353)
+        Me.btnCost.Location = New System.Drawing.Point(405, 308)
         Me.btnCost.Name = "btnCost"
-        Me.btnCost.Size = New System.Drawing.Size(111, 36)
+        Me.btnCost.Size = New System.Drawing.Size(125, 36)
         Me.btnCost.TabIndex = 4
         Me.btnCost.Text = "Display Cost"
         Me.btnCost.UseVisualStyleBackColor = False
@@ -92,9 +93,9 @@ Partial Class frmAirBnB
         Me.btnClear.BackColor = System.Drawing.Color.LightGoldenrodYellow
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(546, 353)
+        Me.btnClear.Location = New System.Drawing.Point(536, 308)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(111, 36)
+        Me.btnClear.Size = New System.Drawing.Size(125, 36)
         Me.btnClear.TabIndex = 5
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -104,9 +105,9 @@ Partial Class frmAirBnB
         Me.btnExit.BackColor = System.Drawing.Color.LightGoldenrodYellow
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(677, 353)
+        Me.btnExit.Location = New System.Drawing.Point(668, 308)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(111, 36)
+        Me.btnExit.Size = New System.Drawing.Size(125, 36)
         Me.btnExit.TabIndex = 6
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
@@ -116,7 +117,7 @@ Partial Class frmAirBnB
         Me.picAirBnB.Image = CType(resources.GetObject("picAirBnB.Image"), System.Drawing.Image)
         Me.picAirBnB.Location = New System.Drawing.Point(2, 2)
         Me.picAirBnB.Name = "picAirBnB"
-        Me.picAirBnB.Size = New System.Drawing.Size(394, 447)
+        Me.picAirBnB.Size = New System.Drawing.Size(394, 371)
         Me.picAirBnB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picAirBnB.TabIndex = 7
         Me.picAirBnB.TabStop = False
@@ -124,28 +125,30 @@ Partial Class frmAirBnB
         'lblCostOfStay
         '
         Me.lblCostOfStay.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCostOfStay.Location = New System.Drawing.Point(427, 266)
+        Me.lblCostOfStay.Location = New System.Drawing.Point(427, 224)
         Me.lblCostOfStay.Name = "lblCostOfStay"
-        Me.lblCostOfStay.Size = New System.Drawing.Size(194, 32)
+        Me.lblCostOfStay.Size = New System.Drawing.Size(148, 32)
         Me.lblCostOfStay.TabIndex = 8
         Me.lblCostOfStay.Text = "Cost of Stay:"
+        Me.lblCostOfStay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblTotalCost
         '
         Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalCost.Location = New System.Drawing.Point(652, 266)
+        Me.lblTotalCost.Location = New System.Drawing.Point(651, 224)
         Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(98, 32)
+        Me.lblTotalCost.Size = New System.Drawing.Size(96, 32)
         Me.lblTotalCost.TabIndex = 9
         Me.lblTotalCost.Text = "$888.88"
-        Me.lblTotalCost.Visible = False
+        Me.lblTotalCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'frmAirBnB
         '
+        Me.AcceptButton = Me.btnCost
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkKhaki
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 375)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCostOfStay)
         Me.Controls.Add(Me.picAirBnB)
