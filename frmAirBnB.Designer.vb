@@ -136,9 +136,9 @@ Partial Class frmAirBnB
         'lblTotalCost
         '
         Me.lblTotalCost.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalCost.Location = New System.Drawing.Point(651, 224)
+        Me.lblTotalCost.Location = New System.Drawing.Point(644, 224)
         Me.lblTotalCost.Name = "lblTotalCost"
-        Me.lblTotalCost.Size = New System.Drawing.Size(96, 32)
+        Me.lblTotalCost.Size = New System.Drawing.Size(110, 32)
         Me.lblTotalCost.TabIndex = 9
         Me.lblTotalCost.Text = "$888.88"
         Me.lblTotalCost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -150,7 +150,7 @@ Partial Class frmAirBnB
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkKhaki
         Me.CancelButton = Me.btnClear
-        Me.ClientSize = New System.Drawing.Size(800, 375)
+        Me.ClientSize = New System.Drawing.Size(800, 373)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCostOfStay)
         Me.Controls.Add(Me.picAirBnB)
