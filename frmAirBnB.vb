@@ -33,11 +33,16 @@ Public Class frmAirBnB
         'get input from txtNumberOfNights
         strNumberOfNights = txtNumberOfNights.Text
         'Convet input to int
-        intNumberOfNights = Convert.ToInt32(strNumberOfNights)
-        'Calculate total cost
-        decTotalCostOfStay = intNumberOfNights * cdecPricePerNight
-        'Convert total cost to String for display
-        lblTotalCost.Text = decTotalCostOfStay.ToString("C2")
+        Try
+            intNumberOfNights = Convert.ToInt32(strNumberOfNights)
+            'Calculate total cost
+            decTotalCostOfStay = intNumberOfNights * cdecPricePerNight
+            'Convert total cost to String for display
+            lblTotalCost.Text = decTotalCostOfStay.ToString("C2")
+        Catch badFormat As FormatException
+            txtNumberOfNights.Clear()
+            txtNumberOfNights.Focus()
+        End Try
 
     End Sub
 
