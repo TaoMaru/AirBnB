@@ -91,6 +91,7 @@ Partial Class frmAirBnB
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.LightGoldenrodYellow
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.Location = New System.Drawing.Point(536, 308)
@@ -148,6 +149,7 @@ Partial Class frmAirBnB
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkKhaki
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(800, 375)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.lblCostOfStay)
