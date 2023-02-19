@@ -24,7 +24,7 @@ Partial Class frmAirBnB
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAirBnB))
         Me.lblHeading = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
+        Me.lblCostHeading = New System.Windows.Forms.Label()
         Me.lblNumNights = New System.Windows.Forms.Label()
         Me.txtNumberOfNights = New System.Windows.Forms.TextBox()
         Me.btnCost = New System.Windows.Forms.Button()
@@ -47,15 +47,15 @@ Partial Class frmAirBnB
         Me.lblHeading.Text = "AirBnB Reservations"
         Me.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'lblPrice
+        'lblCostHeading
         '
-        Me.lblPrice.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPrice.Location = New System.Drawing.Point(447, 70)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(312, 37)
-        Me.lblPrice.TabIndex = 1
-        Me.lblPrice.Text = "Only $79 per Night!"
-        Me.lblPrice.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblCostHeading.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostHeading.Location = New System.Drawing.Point(421, 70)
+        Me.lblCostHeading.Name = "lblCostHeading"
+        Me.lblCostHeading.Size = New System.Drawing.Size(354, 37)
+        Me.lblCostHeading.TabIndex = 1
+        Me.lblCostHeading.Text = "Only XXXX per Night!"
+        Me.lblCostHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblNumNights
         '
@@ -159,7 +159,7 @@ Partial Class frmAirBnB
         Me.Controls.Add(Me.btnCost)
         Me.Controls.Add(Me.txtNumberOfNights)
         Me.Controls.Add(Me.lblNumNights)
-        Me.Controls.Add(Me.lblPrice)
+        Me.Controls.Add(Me.lblCostHeading)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmAirBnB"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -171,7 +171,7 @@ Partial Class frmAirBnB
     End Sub
 
     Friend WithEvents lblHeading As Label
-    Friend WithEvents lblPrice As Label
+    Friend WithEvents lblCostHeading As Label
     Friend WithEvents lblNumNights As Label
     Friend WithEvents txtNumberOfNights As TextBox
     Friend WithEvents btnCost As Button

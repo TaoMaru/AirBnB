@@ -7,12 +7,15 @@
 
 Option Strict On
 Public Class frmAirBnB
-
+    ' declare const price per night value - used in form load and btnCost events
+    Const cdecPricePerNight As Decimal = 79D 'constant 79.00 as cost of one night
     Private Sub frmAirBnB_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' sets lblCostHeading text to contain actual price value
         ' sets lblTotalCost text to blank string
         ' initiates focus to txtNumberOfNights
         txtNumberOfNights.Focus()
         lblTotalCost.Text = ""
+        lblCostHeading.Text = "Only " + cdecPricePerNight.ToString("C2") + " per Night!"
 
     End Sub
 
@@ -27,14 +30,12 @@ Public Class frmAirBnB
         Dim intNumberOfNights As Integer 'num nights as int, holds converted value
         Dim decTotalCostOfStay As Decimal 'total cost as decimal
 
-        Const decCostOfNight As Decimal = 79D 'constant 79.00 as cost of one night
-
         'get input from txtNumberOfNights
         strNumberOfNights = txtNumberOfNights.Text
         'Convet input to int
         intNumberOfNights = Convert.ToInt32(strNumberOfNights)
         'Calculate total cost
-        decTotalCostOfStay = intNumberOfNights * decCostOfNight
+        decTotalCostOfStay = intNumberOfNights * cdecPricePerNight
         'Convert total cost to String for display
         lblTotalCost.Text = decTotalCostOfStay.ToString("C2")
 
